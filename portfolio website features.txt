@@ -1,0 +1,31 @@
+Website examples: https://www.reddit.com/r/graphic_design/comments/zloe42/ten_portfolios_to_study/ 
+
+font downloads:
+https://fontdownloader.net
+https://webfonts.ffonts.net
+https://whatfontis.com
+
+
+About
+    Photo
+    Bio
+Work (gallery?)
+    useful website for deciding on the look of the gallery:
+    https://workik.com/best-gallery-designs-for-websites-with-html-css-and-javascript 
+    The best type of gallery is a responsive masonry gallery since it allows for
+    images with differing dimensions
+
+    Gallery/Work/Projects/Art
+
+    Background colors:
+    Light:
+    #ffffff
+    #f8f8f8
+    #fafafa
+
+    Dark:
+    #090909 
+    #121212 
+    
+
+Contact
