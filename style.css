@@ -155,7 +155,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 5rem;
 }
 
 #hero .info {
@@ -166,8 +166,9 @@ main {
 #hero .info h1 {
     font-size: clamp(2rem, 5vw, 3rem);
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin-bottom: 2.3rem;
     font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #hero .info .hero-accent {
@@ -215,6 +216,10 @@ main {
     border-radius: 12px;
     box-shadow: var(--shadow);
 }
+
+.space {
+    margin-right: 50px;
+  }
 
 /* Gallery */
 
