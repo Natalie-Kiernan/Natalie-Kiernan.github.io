@@ -228,13 +228,12 @@ main {
 }
 
 .gallery {
-    columns: 3;
-    column-gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
 }
 
 .gallery-item {
-    break-inside: avoid;
-    margin-bottom: 16px;
     border-radius: 8px;
     overflow: hidden;
     cursor: pointer;
@@ -430,7 +429,7 @@ footer {
 
 @media (max-width: 900px) {
     .gallery {
-        columns: 2;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     #hero .container {
@@ -461,7 +460,7 @@ footer {
     }
 
     .gallery {
-        columns: 1;
+        grid-template-columns: 1fr;
     }
 
     .about-info {
