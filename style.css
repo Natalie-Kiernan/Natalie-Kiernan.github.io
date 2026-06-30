@@ -137,6 +137,11 @@ main {
     color: var(--font-color);
 }
 
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
 /* Hero */
 
 #hero {
@@ -198,6 +203,15 @@ main {
     padding: 0.75em 2em;
     margin-top: 1.5rem;
     transition: background-color var(--transition), transform var(--transition);
+    justify-content: center;
+}
+
+#hero .info #gallery-link {
+    background-color: var(--header-color);
+    color: var(--border-color);
+    transition: background-color var(--transition), transform var(--transition);
+    border: 2px var(--border-color) solid;
+    margin-right: 40px;
 }
 
 #hero .info a:hover {
@@ -218,10 +232,14 @@ main {
 }
 
 .space {
-    margin-right: 50px;
+    margin-right: 44px;
   }
 
 /* Gallery */
+
+#gallery-start {
+    scroll-margin-top: 80px;
+}
 
 .gallery-section {
     padding-bottom: 4rem;
