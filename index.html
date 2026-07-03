@@ -22,7 +22,21 @@
     <section id="hero">
         <div class="container">
             <div class="img">
-                <img class="about-img" src="images/baker-studio-photos-1.jpg" alt="Natalie Kiernan">
+                <img class="about-img" src="images/baker-studio-photos-1.jpg" alt="Ed Baker's Natalie Kiernan headshot">
+                <picture>
+                    <!-- Sharp, fast-loading version for modern screens -->
+                     <source srcset="images/headshot.webp" type="image/webp">
+                     
+                     <!Flawless, pixel-perfect backup version -->
+                     <source srcset="images/baker-studio-headshot.png" type="image/png">
+
+                     <!--  The fallback image that controls the layout dimensions -->
+                     <img src="images/baker-studio-headshot.png"
+                          alt="Professional headshot"
+                          width="500"
+                          height="500"
+                          style="width:  100%; max-width: 500px;  height: auto;  display: block;">  
+                </picture>500
             </div>
             <div class="info">
                 <h1><span class="space"></span>I'm Natalie Kiernan<br><span class="hero-accent">Graphic Designer</span></h1>
@@ -37,7 +51,7 @@
 
     <section id="gallery-start" class="gallery-section">
         <div class="container">
-            <h2 class="section-heading">Posters and More</h2>
+            <h2 class="section-heading">Print Design and More</h2>
             <div class="gallery">
                 <div class="gallery-item"><img src="images/audubon-poster.jpg" alt="Audubon Poster" loading="lazy"></div>
                 <div class="gallery-item"><img src="images/chapel-haven-schleifer-center-flyer.jpg" alt="Chapel Haven Schleifer Center Flyer" loading="lazy"></div>
@@ -93,18 +107,17 @@
     <section class="gallery-section">
         <div class="container">
             <h2 class="section-heading">Newspaper Ads</h2>
-            <p> These are comps for a full page newspaper ad for Elizabeth Park's Summer Garden Tour.  
-                We students were limited to use only simple shapes, i.e.; geometric shapes, letters, only and 3 colors
-                including their shades/tints. </p>
+            <p> These are my comps for a full page newspaper advertisement for Elizabeth Park's Summer Garden Tour.  
+                Students were limited to using simple shapes, i.e.; geometric shapes and/or letters, and a 3-color limit, 
+                shades and tints included. 
+            </p>
             <div class="gallery">
                 <div class="gallery-item"><img src="images/Flower Newspaper  (1).jpg" alt="flower 1" loading="lazy"></div>
                 <div class="gallery-item"><img src="images/Flower Newspaper  (2).jpg" alt="Flower 2" loading="lazy"></div>
                 <div class="gallery-item"><img src="images/Flower Newspaper  (3).jpg" alt="Flower 3" loading="lazy"></div>
-                <div class="gallery-item"><img src="images/Flower Newspaper  (4).jpg" alt="Flower 4" loading="lazy"></div>
                 <div class="gallery-item"><img src="images/Flower Newspaper  (6).jpg" alt="Flower 6" loading="lazy"></div>
                 <div class="gallery-item"><img src="images/Flower Newspaper  (7).jpg" alt="Flower 7" loading="lazy"></div>
                 <div class="gallery-item"><img src="images/Flower Newspaper  (8).jpg" alt="Flower 8" loading="lazy"></div>
-                <div class="gallery-item"><img src="images/Flower Newspaper  (9).jpg" alt="Flower 8" loading="lazy"></div>
                 <div class="gallery-item"><img src="images/Flower Newspaper  (10).jpg" alt="Flower 8" loading="lazy"></div>
             </div>
         </div>
