@@ -36,3 +36,14 @@
         if (e.key === 'Escape') closeLightbox();
     });
 })();
+
+
+// Disables right-click menu across the entire site
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+// Forces all current and future images to be undraggable 
+document.addEventListener('dragstart', (event) => {
+  if (event.target.tagName === 'IMG') {
+    event.preventDefault();
+  }
+});
