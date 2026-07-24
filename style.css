@@ -251,6 +251,12 @@ main {
     gap: 16px;
 }
 
+.gallery2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
 .gallery-item {
     border-radius: 8px;
     overflow: hidden;
