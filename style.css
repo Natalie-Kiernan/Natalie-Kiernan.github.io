@@ -186,13 +186,14 @@ main {
     -webkit-text-fill-color: transparent;
 }
 
-#hero .info p {
+#hero .info a {
     font-size: 1.1rem;
     color: var(--muted-color);
-    margin-bottom: 0.5rem;
+    text-decoration: none;
+    color: var(--muted-color);
 }
 
-#hero .info a {
+#hero .info .button{
     text-decoration: none;
     display: inline-block;
     background-color: var(--accent-color);
@@ -214,7 +215,7 @@ main {
     margin-right: 40px;
 }
 
-#hero .info a:hover {
+#hero .button:hover {
     background-color: var(--accent-hover);
     transform: translateY(-2px);
 }
@@ -233,11 +234,17 @@ main {
 
 .space {
     margin-right: 44px;
-  }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
 
 /* Gallery */
 
-#gallery-start {
+.gallery-section {
     scroll-margin-top: 80px;
 }
 
@@ -399,7 +406,7 @@ main {
     margin-bottom: 1rem;
 }
 
-.contact > p {
+.contact p {
     color: var(--muted-color);
     margin-bottom: 2.5rem;
     font-size: 1.05rem;
