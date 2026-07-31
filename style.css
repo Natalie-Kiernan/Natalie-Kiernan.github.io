@@ -191,8 +191,6 @@ main {
 #hero .info a {
   font-size: 1.1rem;
   color: var(--muted-color);
-  text-decoration: none;
-  color: var(--muted-color);
 }
 
 #hero .info .button {
