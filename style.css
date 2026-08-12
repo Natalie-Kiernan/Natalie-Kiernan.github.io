@@ -1,9 +1,4 @@
 @font-face {
-  font-family: "Amaline";
-  src: url(fonts/AmalineTrial-Regular.ttf.woff);
-}
-
-@font-face {
   font-family: "Above-the-Beyond";
   src: url(fonts/Above\ the\ Beyond\ Script.woff2);
 }
@@ -144,6 +139,30 @@ main {
   justify-content: center;
 }
 
+.back-to-top {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.back-to-top .button {
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--header-color);
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75em 2em;
+  transition:
+    background-color var(--transition),
+    transform var(--transition);
+}
+
+.back-to-top .button:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
 /* Hero */
 
 #hero {
@@ -163,6 +182,13 @@ main {
   align-items: center;
   justify-content: center;
   gap: 5rem;
+}
+
+#hero .picture img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
 }
 
 #hero .info {
@@ -206,38 +232,11 @@ main {
   transition:
     background-color var(--transition),
     transform var(--transition);
-  justify-content: center;
-}
-
-#hero .info #gallery-link {
-  background-color: var(--header-color);
-  color: var(--border-color);
-  transition:
-    background-color var(--transition),
-    transform var(--transition);
-  border: 2px var(--border-color) solid;
-  margin-right: 40px;
 }
 
 #hero .button:hover {
   background-color: var(--accent-hover);
   transform: translateY(-2px);
-}
-
-#hero .img {
-  flex-shrink: 0;
-}
-
-.img .about-img {
-  width: 280px;
-  height: 340px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-}
-
-.space {
-  margin-right: 44px;
 }
 
 .grid-container {
@@ -250,9 +249,6 @@ main {
 
 .gallery-section {
   scroll-margin-top: 80px;
-}
-
-.gallery-section {
   padding-bottom: 4rem;
 }
 
@@ -280,6 +276,7 @@ main {
   width: 100%;
   display: block;
   border-radius: 8px;
+  pointer-events: auto;
   transition:
     transform 0.35s ease,
     filter 0.35s ease;
@@ -291,7 +288,7 @@ main {
 }
 
 .gallery-item::after {
-  content: "View";
+  content: "Zoom";
   position: absolute;
   inset: 0;
   display: flex;
@@ -309,6 +306,40 @@ main {
 }
 
 .gallery-item:hover::after {
+  opacity: 1;
+}
+
+.image-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.gallery-item .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: sans-serif;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 100;
+  opacity: 0;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+  pointer-events: none;
+}
+
+.gallery-item:hover .tooltip-text {
+  visibility: visible;
   opacity: 1;
 }
 
@@ -362,6 +393,60 @@ main {
   opacity: 1;
 }
 
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  color: #fff;
+  font-size: 2.75rem;
+  line-height: 1;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.85;
+  transition: opacity var(--transition), background-color var(--transition);
+  z-index: 1001;
+}
+
+.lightbox-nav:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.lightbox-prev {
+  left: 1rem;
+}
+
+.lightbox-next {
+  right: 1rem;
+}
+
+@media (max-width: 600px) {
+  .lightbox-nav {
+    font-size: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .lightbox-prev {
+    left: 0.5rem;
+  }
+
+  .lightbox-next {
+    right: 0.5rem;
+  }
+
+  .lightbox {
+    padding: 1rem 3.5rem;
+  }
+}
+
 /* About */
 
 .about {
@@ -374,7 +459,7 @@ main {
   font-family: var(--main-font);
   font-size: 2rem;
   margin-bottom: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .about-info {
@@ -511,14 +596,13 @@ footer {
     text-align: center;
   }
 
+  .about h2 {
+    text-align: center;
+  }
+
   .about-info .about-img {
     width: 200px;
     height: 250px;
-  }
-
-  .img .about-img {
-    width: 220px;
-    height: 280px;
   }
 }
 
@@ -532,49 +616,4 @@ footer {
     font-size: 14px;
     padding: 0.35em 0.75em;
   }
-}
-/*### The Required CSS Update
-Add this code to the bottom of your `style.css` file. It configures the `.gallery-item` block as the absolute anchor point and cleanly reveals the floating tooltip upon cursor hover:
-
-```css*/
-/* Ensure the grid wrapper acts as a safe bounds system for positioning the tooltip */
-.gallery-item {
-  position: relative;
-  display: inline-block;
-}
-
-/* Force standard overlay actions back to pointer-ready triggers */
-.gallery-item img {
-  pointer-events: auto;
-  display: block;
-  width: 100%;
-}
-
-/* Global design configurations for the floating tooltips */
-.gallery-item .tooltip-text {
-  visibility: hidden;
-  position: absolute;
-  bottom: 50px; /* Aligns the bubble inside/at the base edge of your picture */
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.85); /* Smooth translucent dark backing */
-  color: #ffffff;
-  padding: 6px 12px;
-  border-radius: 4px;
-  font-size: 13px;
-  font-family: sans-serif;
-  text-align: center;
-  white-space: nowrap;
-  z-index: 100;
-  opacity: 0;
-  transition:
-    opacity 0.2s ease,
-    transform 0.2s ease;
-  pointer-events: none; /* Stops the tooltip itself from intercepting your cursor paths */
-}
-
-/* Active triggering states */
-.gallery-item:hover .tooltip-text {
-  visibility: visible;
-  opacity: 1;
 }

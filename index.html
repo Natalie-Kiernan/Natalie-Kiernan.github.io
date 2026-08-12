@@ -1,460 +1,568 @@
-<!DOCFTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Natalie Kiernan - Portfolio</title>
-    <link rel="icon" type="image/jpg" href="images/baker-studio-headshot.jpg">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-     <header class="header">
-        <h1 class="logo"><a href="index.html">Natalie Kiernan</a></h1>
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="#posters">Portfolio</a></li>
-                <li class="border"><a href="about.html">About</a></li>
-                <li><a class="cta" href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <link rel="icon" type="image/jpg" href="images/baker-studio-headshot.jpg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo"><a href="index.html">Natalie Kiernan</a></h1>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#posters">Portfolio</a></li>
+          <li class="border"><a href="about.html">About</a></li>
+          <li><a class="cta" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <div class="container">
-                <div class="picture">
-                    <picture>
-                        <source srcset="images/baker-studio-headshot.png" type="image/png">
-                        <img src="images/baker-studio-headshot.png" alt="Professional headshot" width="500" height="500" style="width: 100%; max-width: 500px; height: auto; display: block;">
-                    </picture>
-                </div>
-                <div class="info">
-                    <h1><span class="space"></span>I'm Natalie Kiernan<br> <span class="hero-accent">Graphic Designer</span></h1>
-                    <div class="grid-container">
-                        <a href="#posters">Posters</a> 
-                        <a href="#packaging">Packaging</a> 
-                        <a href="#branding">Branding</a> 
-                        <a href="#animation">Animations</a>          
-                        <a href="#newspaper ad">Newspaper Ads</a> 
-                        <a href="#bookcovers">Book Covers</a> 
-                        <a href="#magazine">Magazine Layouts</a> 
-                        <a href="#government/social service">Government/Social Service Ad</a>    
-                    </div>
-                    <div class="flex-container">
-                        <!-- <a id="gallery-link" class="button" href="#posters">Portfolio</a> -->
-                        <a id="contact-link" class="button" href="contact.html">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Posters Section -->
-        <section id="posters" class="gallery-section">
-            <div class="container">
-                <h2 class="section-heading">Posters</h2>
-                <div class="gallery">
-                    <div class="gallery-item">
-                        <img src="images/museum-schedule.jpg" alt="Museum schedule design" loading="lazy">
-                        <span class="tooltip-text">Museum Schedule Poster (Front)</span>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/museum-schedule-back.jpg" alt="Museum schedule back" loading="lazy">
-                        <span class="tooltip-text">Museum Schedule Poster (Back)</span>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/can-opener-poster.jpg" alt="Can opener poster design" loading="lazy">
-                        <span class="tooltip-text">Mechanical Tool Instruction Poster</span>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/audubon-poster.jpg" alt="Audubon Poster" loading="lazy">
-                        <span class="tooltip-text">Audubon Anniversary Poster</span>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/helvetica-poster.jpg" alt="Helvetica poster" loading="lazy">
-                        <span class="tooltip-text">San Serif Typeface Poster</span>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/palatino-poster-darker.jpg" alt="Palatino poster darker" loading="lazy">
-                        <span class="tooltip-text">Serif Typeface Poster</span>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/Sneakers-Parks-01.jpg" alt="Sneakers-Grand Canyon poster" loading="lazy">
-                        <span class="tooltip-text">National Parks Poster</span>
-                    </div>
-               <!-- <div class="gallery-item">
-                        <img src="images/Sneakers-Parks-02.jpg" alt="Sneakers-Grand Canyon poster" loading="lazy">
-                        <span class="tooltip-text">Nike Sneaker Poster</span>
-                    </div> -->
-                    <div class="gallery-item">
-                        <img src="images/horror-poster.jpg" alt="Horror movie poster design" loading="lazy">
-                        <span class="tooltip-text">Radio Theatre Poster <br> Educational Creative Commons Usage of Images</span>
-                    </div>
-
-                    <div class="gallery-item">
-                        <div class="image-cell">
-                            <style>.image-cell {display: flex; flex-direction: column;align-items: center;gap: 15px; }
-                            </style>
-                             <img src="images/horror-program1.jpg" alt="Horror program 1" loading="lazy">
-                                       <span class="tooltip-text">Radio Theatre Folding Program - Cover<br> Educational Creative Commons Usage of Images</span>
-                             <img src="images/horror-program2.jpg" alt="Horror program 2" loading="lazy">
-                                       <span class="tooltip-text">Radio Theatre Folding Program - Front/Back<br> Educational Creative Commons Usage of Images</span>
-                        </div>                           
-                    </div>
-                    <div class="gallery-item">
-                        
-                    </div>
-                </div>
-                <p align="center">
-                    <a class="button" href="#hero">&uArr; Back to Top </a>
-                </p>
-            </div>
-        </section>
-
-        <!-- Old More Section (Photoshop & Landscaping Pins) Renamed as Miscellaneous with Tooltips to Specify Further
-            <section id="miscellaneous" class="gallery-section">
-            <div class="container">
-                <h2 class="section-heading">Miscellaneous</h2>
-                <div class="gallery">
-                    <div class="gallery-item">
-                        <img src="images/dispersion-effect.jpg" alt="Dispersion effect" loading="lazy">
-                        <span class="tooltip-text">Photoshop Dispersion Effect</span>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/girl-ship-dog.gif" alt="Girl-Ship-Dog" loading="lazy">
-                        <span class="tooltip-text">Digitally Processed Photo Composite</span>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/landmark pins.jpg" alt="Landmark pins set" loading="lazy">
-                        <span class="tooltip-text">Custom Landmark Pin Vector Designs <br>
-                                                   Rio De Janeiro, Brazil</span>
-                    <img src="images/FAB BOOK COVER.jpg" alt="FAB Book Cover" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        -->
-        </section>
-
-        <section id="packaging" class="gallery-section">
-            <div class="container">
-                <h2 class="section-heading">Packaging</h2>
-                <div class="gallery">
-                    <div class="gallery-item">
-                        <img src="images/jam-plum.jpg" alt="Plum jam" loading="lazy">
-                        <span class="tooltip-text">Bespoke Plum Jam Label </span>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/jam-apple.jpg" alt="Apple jam" loading="lazy">
-                        <span class="tooltip-text">Bespoke Apple Jam Label </span>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/jam-pear.jpg" alt="Pear jam" loading="lazy">
-                        <span class="tooltip-text">Bespoke Pear Jam Label </span>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/TEA-01.jpg" alt="tea package 1 (chamommile honey)" loading="lazy">
-                        <span class="tooltip-text">Bespoke Tea Package</span>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/TEA-02.jpg" alt="tea package 2 (apple blossom cinammon)" loading="lazy">
-                        <span class="tooltip-text">Bespoke Tea Package</span>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/TEA-03.jpg" alt="tea package 3 (ginger rose)" loading="lazy">
-                        <span class="tooltip-text">Bespoke Tea Package</span>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/wine-bottle-labels.jpg" alt="Wine bottle labels" loading="lazy">
-                        <span class="tooltip-text">Wine Bottle Label </span>
-                    </div>
-                </div>
-                <p align="center">
-                    <a class="button" href="#hero">&uArr; Back to Top </a>
-                </p>
-            </div>
-        </section>
-
-    <section id="branding" class="gallery-section">
+      <section id="hero">
         <div class="container">
-            <h2 class="section-heading">Branding</h2>
-                <div class="gallery2">
-                <div class="gallery-item"><img src="images/Logo1.jpg" alt="Spotlight logo designs" loading="lazy">
-                    <span class="tooltip-text"> Logo and Business Card 1 for Independent Film Company<br>
-                    Educational Creative Commons Usage of Image</span>
-                </div>
-                <div class="gallery-item"><img src="images/Logo2.jpg" alt="Spotlight logo designs" loading="lazy">
-                    <span class="tooltip-text"> Logo and Business Card 2 for Independent Film Company<br>
-                    Educational Creative Commons Usage of Image</span>
-                </div>
-                <div class="gallery-item"><img src="images/Logo3.jpg" alt="Spotlight logo designs" loading="lazy">
-                    <span class="tooltip-text"> Logo and Business Card 3 for Independent Film Company<br>
-                    Educational Creative Commons Usage of Image</span>
-                </div>
-                <div class="gallery-item"><img src="images/Logo4.jpg" alt="Spotlight logo designs" loading="lazy">
-                    <span class="tooltip-text">Logo and Business Card 4 for Independent Film Company<br>
-                    Educational Creative Commons Usage of Image</span>
-                </div>
+          <div class="picture">
+            <img
+              src="images/baker-studio-headshot.png"
+              alt="Professional headshot"
+              width="500"
+              height="500"
+            />
+          </div>
+          <div class="info">
+            <h1>
+              I'm Natalie Kiernan<br /><span class="hero-accent"
+                >Graphic Designer</span
+              >
+            </h1>
+            <div class="grid-container">
+              <a href="#posters">Posters</a>
+              <a href="#packaging">Packaging</a>
+              <a href="#branding">Branding</a>
+              <a href="#animation">Animations</a>
+              <a href="#newspaper-ad">Newspaper Ads</a>
+              <a href="#bookcovers">Book Covers</a>
+              <a href="#magazine">Magazine Layouts</a>
+              <a href="#government-social">Government/Social Service Ad</a>
             </div>
-            <p align="center">
-                <a class="button" href="#hero">&uArr; Back to Top </a>
-            </p>
+            <div class="flex-container">
+              <a class="button" href="contact.html">Contact</a>
+            </div>
+          </div>
         </div>
-    </section>    
+      </section>
 
- 
-    <section id="newspaper ad" class="gallery-section">
+      <section id="posters" class="gallery-section">
         <div class="container">
-            <h2 class="section-heading">Newspaper Ad</h2>
-            <div class="gallery">           
-                <div class="gallery-item">
-                    <img src="images/Flower Newspaper better (1).jpg" alt="flower 1 better" loading="lazy">
-                    <span class="tooltip-text">Full-Page Newspaper Ad-Weekend 1<br>(simple shapes, letters, 3-color limit)</span>
-                </div>
-                <div class="gallery-item"><img src="images/Flower Newspaper  (2).jpg" alt="Flower 2" loading="lazy">
-                    <span class="tooltip-text">Full-Page Newspaper Ad-Weekend 2<br>(simple shapes, letters, 3-color limit)</span>
-                </div>
-              <div class="gallery-item"><img src="images/Flower Newspaper  better (3).jpg" alt="Flower 3 better" loading="lazy">
-                    <span class="tooltip-text">Full-Page Newspaper Ad-Weekend 3<br>(simple shapes, letters, 3-color limit)</span>
-                </div>
-            
-               <div class="gallery-item"><img src="images/Flower Newspaper better (4).jpg" alt="Flower 4 better" loading="lazy">
-                    <span class="tooltip-text">Full-Page Newspaper Ad-Weekend 4<br>(simple shapes, letters, 3-color limit)</span>
-                </div>
-               <div class="gallery-item"><img src="images/Flower Newspaper  (5).jpg" alt="Flower 2" loading="lazy">
-                    <span class="tooltip-text">Full-Page Newspaper Ad-Weekend 5<br>(simple shapes, letters, 3-color limit)</span>
-                </div>
-                <div class="gallery-item"><img src="images/Flower Newspaper (2nd last) (3).jpg" alt="Flower 6" loading="lazy">
-                    <span class="tooltip-text">Full-Page Newspaper Ad-Weekend 6<br>(simple shapes, letters, 3-color limit)</span>
-                </div>
-                <div class="gallery-item"><img src="images/Flower Newspaper (last).jpg" alt="Flower 2" loading="lazy">
-                    <span class="tooltip-text">Full-Page Newspaper Ad-Weekend 7<br>(simple shapes, letters, 3-color limit)</span>
-                </div>
-               
-                <div class="gallery-item"><img src="images/Flower Newspaper  (8).jpg" alt="Flower 8" loading="lazy">
-                    <span class="tooltip-text">Full-Page Newspaper Ad-Weekend 8<br>(simple shapes, letters, 3-color limit)</span>
-                </div>
+          <h2 class="section-heading">Posters</h2>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img
+                src="images/museum-schedule.jpg"
+                alt="Museum schedule design"
+                loading="lazy"
+              />
+              <span class="tooltip-text">Museum Schedule Poster (Front)</span>
             </div>
-            <p align="center">
-                <a class="button" href="#hero">&uArr; Back to Top </a>
-            </p>
-        </div>
-    </section>
-
-    <section id="bookcovers" class="gallery-section">
-        <div class="container"></div>
-            <h2 class="section-heading">Book Covers </h2>   
-            <div class="gallery">
-                    <div class="gallery-item">
-
-                        <img src="images/horror-book-cover1.jpg" alt="Horror Book 1" loading="lazy">
-                        <span class="tooltip-text">Horror Book 1 Cover <br> Some Images were AI-Generated</span>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/horror-book-cover2.jpg" alt="Horror Book 2" loading="lazy">
-                        <span class="tooltip-text">Horror Book 2 Cover <br> Some Images were AI-Generated</span>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/horror-book-cover3.gif" alt="Horror Book 3" loading="lazy">
-                        <span class="tooltip-text">Horror Book 3 Cover <br> Some Images were AI-Generated</span>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/horror-book-covers-shelf.jpg" alt="Horror Book Covers Shelf" loading="lazy">
-                        <span class="tooltip-text">Book Series<br> Some Images were AI-Generated</span>
-                    </div>
+            <div class="gallery-item">
+              <img
+                src="images/museum-schedule-back.jpg"
+                alt="Museum schedule back"
+                loading="lazy"
+              />
+              <span class="tooltip-text">Museum Schedule Poster (Back)</span>
             </div>
-            <p align="center">
-                <a class="button" href="#hero">&uArr; Back to Top </a>
-            </p>
+            <div class="gallery-item">
+              <img
+                src="images/can-opener-poster.jpg"
+                alt="Can opener poster design"
+                loading="lazy"
+              />
+              <span class="tooltip-text"
+                >Mechanical Tool Instruction Poster</span
+              >
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/audubon-poster.jpg"
+                alt="Audubon Poster"
+                loading="lazy"
+              />
+              <span class="tooltip-text">Audubon Anniversary Poster</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/helvetica-poster.jpg"
+                alt="Helvetica poster"
+                loading="lazy"
+              />
+              <span class="tooltip-text">San Serif Typeface Poster</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/palatino-poster-darker.jpg"
+                alt="Palatino poster darker"
+                loading="lazy"
+              />
+              <span class="tooltip-text">Serif Typeface Poster</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/Sneakers-Parks-01.jpg"
+                alt="Sneakers-Grand Canyon poster"
+                loading="lazy"
+              />
+              <span class="tooltip-text">National Parks Poster</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/horror-poster.jpg"
+                alt="Horror movie poster design"
+                loading="lazy"
+              />
+              <span class="tooltip-text"
+                >Radio Theatre Poster<br />Educational Creative Commons Usage of
+                Images</span
+              >
+            </div>
+            <div class="gallery-item">
+              <div class="image-cell">
+                <img
+                  src="images/horror-program1.jpg"
+                  alt="Horror program 1"
+                  loading="lazy"
+                />
+                <span class="tooltip-text"
+                  >Radio Theatre Folding Program - Cover<br />Educational
+                  Creative Commons Usage of Images</span
+                >
+                <img
+                  src="images/horror-program2.jpg"
+                  alt="Horror program 2"
+                  loading="lazy"
+                />
+                <span class="tooltip-text"
+                  >Radio Theatre Folding Program - Front/Back<br />Educational
+                  Creative Commons Usage of Images</span
+                >
+              </div>
+            </div>
+          </div>
+          <p class="back-to-top">
+            <a class="button" href="#hero">&uArr; Back to Top</a>
+          </p>
         </div>
-    </section>
- 
-    <section id="animation" class="gallery-section">
+      </section>
+
+      <section id="packaging" class="gallery-section">
         <div class="container">
-            <h2 class="section-heading">Animations</h2>
-            <div class="gallery">
-                <div class="gallery-item"><img src="images/Animated-Card.gif" alt="Birthday card new" loading="lazy">
-                    <span class="tooltip-text">Birthday Card</span>
-                </div>
-                <div class="gallery-item"><img src="images/click-ad-fashion.gif" alt="Click Ad-fashion" loading="lazy">
-                    <span class="tooltip-text">Fashion Click-Ad</span>
-                </div>
+          <h2 class="section-heading">Packaging</h2>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img src="images/jam-plum.jpg" alt="Plum jam" loading="lazy" />
+              <span class="tooltip-text">Bespoke Plum Jam Label</span>
             </div>
-            <p align="center">
-                    <a class="button" href="#hero">&uArr; Back to Top </a>
-            </p>
+            <div class="gallery-item">
+              <img src="images/jam-apple.jpg" alt="Apple jam" loading="lazy" />
+              <span class="tooltip-text">Bespoke Apple Jam Label</span>
+            </div>
+            <div class="gallery-item">
+              <img src="images/jam-pear.jpg" alt="Pear jam" loading="lazy" />
+              <span class="tooltip-text">Bespoke Pear Jam Label</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/TEA-01.jpg"
+                alt="tea package 1 (chamommile honey)"
+                loading="lazy"
+              />
+              <span class="tooltip-text">Bespoke Tea Package</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/TEA-02.jpg"
+                alt="tea package 2 (apple blossom cinammon)"
+                loading="lazy"
+              />
+              <span class="tooltip-text">Bespoke Tea Package</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/TEA-03.jpg"
+                alt="tea package 3 (ginger rose)"
+                loading="lazy"
+              />
+              <span class="tooltip-text">Bespoke Tea Package</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/wine-bottle-labels.jpg"
+                alt="Wine bottle labels"
+                loading="lazy"
+              />
+              <span class="tooltip-text">Wine Bottle Label</span>
+            </div>
+          </div>
+          <p class="back-to-top">
+            <a class="button" href="#hero">&uArr; Back to Top</a>
+          </p>
         </div>
-    </section>
-<!--          
-        <section id="magazine" class="gallery-section">
-            <div class="container">
-                <h2 class="section-heading">Magazine Layout</h2>
-                <div class="gallery">
-                    <div class="gallery-item"><img src="images/MAG.jpg" alt="" loading="lazy">
-                        <span class="tooltip-text">1970's Magazine Layout  - Page 1</span>
-                    </div>
-                    <div class="gallery-item"><img src="images/MAG2.jpg" alt="" loading="lazy">
-                        <span class="tooltip-text">1970's Magazine Layout  - Page 2</span>
-                    </div>
-                -->                    
-                    <!--this next line is a space holder that remains empty for one image's width, 
-                        height is simply a guess-->
- <!--               <img src="" alt="" width="400" height="400" style="display: block;">
-         </section> 
--->                   
-<!--
-<section id="magazine" class="gallery-section">                  
-<div class="row-container">
-  <!-- Group the first two columns to make them touch -->
-<!--  <div class="touching-group">
-    <div class="column col-1">Column 1</div>
-    <div class="column col-2">Column 2</div>
-  </div>
-  
-  <!-- Separate the third column -->
-<!--  <div class="column col-3">Column 3</div>
-</div>
+      </section>
 
-<style>
-  /* The parent container uses flexbox to stretch items to equal heights */
-  .row-container {
-    display: flex;
-    gap: 20px; /* This controls the gap before the 3rd column */
-    width: 100%;
-    align-items: stretch; /* Forces equal height for all columns */
-  }
-
-  /* The wrapper holding the first two columns expands to take up 2/3 width */
-  .touching-group {
-    display: flex;
-    flex: 2; /* Takes up 2 shares of space */
-    align-items: stretch; /* Forces equal height inside the group */
-  }
-
-  /* Individual columns */
-  .column {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 15px;
-    box-sizing: border-box;
-  }
-
-  /* Columns 1 and 2 each take half of the 2-share wrapper (1/3 of the total width) */
-  .touching-group .column {
-    flex: 1; 
-  }
-
-  /* Column 3 takes up 1 share of space (1/3 of the total width) */
-  .col-3 {
-    flex: 1; 
-  }
-</style>
--->
-       <section id="magazine" class="gallery-section">
-            <div class="container">
-                <h2 class="section-heading">Magazine Layouts</h2>
-                <div class="gallery">
-                    <div class="gallery-item"><img src="images/MAG-lustig.jpg" alt="" loading="lazy">
-                        <span class="tooltip-text">1970 Magazine Layout (Page 1)</span>
-                    </div>
-                    <div class="gallery-item"><img src="images/MAG-lustig2.jpg" alt="" loading="lazy">
-                        <span class="tooltip-text">1970 Magazine Layout (Page 2)</span>
-                    </div>
-                    <!--this next line is a space holder that remains empty for one image's width, 
-                        height is simply a guess -->
-                    <img src="" alt="" width="400" height="400" style="display: block;">
-                    
- <!--                  <div class="gallery-item"><img src="images/adventure-awaits-4-lite-green.jpg" alt="" loading="lazy"> 
-                        <span class="tooltip-text">Create 4 Magazine Designs: Design 1 - Title Page</span>
-                   </div>
-                   
-                  
-<!--                   <div class="gallery-item"><img src="images/adventure-awaits-5-lite-green.jpg" alt="" loading="lazy">
-                        <span class="tooltip-text">Create 4 Magazine Designs: Design 1 - Page 2</span>
-                   </div>
-                                  
-                   <div class="gallery-item"><img src="images/adventure-awaits-1-turq-zapfino.jpg" alt="" loading="lazy">
-                        <span class="tooltip-text"> Create 4 Magazine Designs: Design 1</span>
-                   </div>
-                   <div class="gallery-item"><img src="images/adventure-awaits-2-turq-zapfino.jpg" alt="" loading="lazy">
-                        <span class="tooltip-text">Create 4 Magazine Designs: Design 2</span>
-                   </div>
--->                     
-                   <div class="gallery-item"><img src="images/Adventure_Awaits-turquios-individual-pages.jpg" alt="" loading="lazy">
-                        <span class="tooltip-text">Modern Magazine Design-Page 1</span>                   
-                   </div>
-                   <div class="gallery-item"><img src="images/Adventure_Awaits-turquios-individual-pages2.jpg" alt="" loading="lazy">
-                        <span class="tooltip-text">Modern Magazine Design-Page 2</span>                   
-                   </div>
-<!--                   <div class="gallery-item"><img src="images/adventure-awaits-4-lite-green-title-page.jpg" alt="" loading="lazy"> 
-                        <span class="tooltip-text">Create 4 Magazine Designs: Design 4 - Cover></span>
-                   </div>
-                   <div class="gallery-item"><img src="images/adventure-awaits-lite-green-pg1.jpg" alt="" loading="lazy">
-                        <span class="tooltip-text">Create 4 Magazine Designs: Design 4 - Page 1</span>
-                   </div>
--->   
-                 <!-- Below are the spreads - waiting for Aidan to set up a lager width and length-->  
- <!--                 <div class="gallery-item"><img src="images/MAG-lustig-spread.jpg" alt="" loading="lazy">
-                        <span class="tooltip-text">1970's Magazine Layout-2 Pages</span>                   
-                   </div>
-                   <div class="gallery-item"><img src="images/Adventure_Awaits-turquios.jpg" alt="" loading="lazy">
-                        <span class="tooltip-text">Modern Magazine Design - 2 Pages</span>                   
-                   </div>
- -->                  
-               </div>
-               <p align="center">
-                    <a class="button" href="#hero">&uArr; Back to Top </a>
-               </p>
+      <section id="branding" class="gallery-section">
+        <div class="container">
+          <h2 class="section-heading">Branding</h2>
+          <div class="gallery2">
+            <div class="gallery-item">
+              <img
+                src="images/Logo1.jpg"
+                alt="Spotlight logo designs"
+                loading="lazy"
+              />
+              <span class="tooltip-text"
+                >Logo and Business Card 1 for Independent Film Company<br />Educational
+                Creative Commons Usage of Image</span
+              >
             </div>
-        </section>
-
-
-            <section id="government/social service" class="government/social service-section">
-            <div class="container">
-                <h2 class="section-heading">Government & Social Service Ad</h2>
-                <div class="gallery">
-                    <div class="gallery-item"><img src="images/CHAPEL HAVEN FINAL-unblurred.jpg" alt="" loading="lazy">
-                        <span class="tooltip-text">Social Service Flyer 8x11</span>
-                    </div>
-                    <div class="gallery-item"><img src="images/landmark pins.jpg" alt="" loading="lazy">
-                        <span class="tooltip-text">Map Pins-Tourist Landmarks-Rio De Janiero</span>
-                    </div>
- <!--                  <div 
-                    <p>*Note:</p> 
-                    <p>Project: (Left) Student Concept Flyer: Chapel Haven</p>
-                    <p></p> 
-                    <p>  Course: Intro to Graphic Design/ Academic Spec Work</p>
-                    <p></p>
-                    <p>   My Role: Art Direction, Typography, Layout Design</p>
-                    <p></p>    
-                    <p>Concept Note: This layout was built around an educational asset provided during coursework. 
-                       To comply with privacy and digital copyright standards for public portfolio display,
-                       the photographic elements have been heavily stylized and blurred into abstract background textures.</p>
-                    <p></p>   
-                    <p>All layout architecture, typeface selection, and grid design are entirely original.</p>
-                    </div>
-               </div>
--->
-               <p align="center">
-                    <a class="button" href="#hero">&uArr; Back to Top </a>
-               </p>
+            <div class="gallery-item">
+              <img
+                src="images/Logo2.jpg"
+                alt="Spotlight logo designs"
+                loading="lazy"
+              />
+              <span class="tooltip-text"
+                >Logo and Business Card 2 for Independent Film Company<br />Educational
+                Creative Commons Usage of Image</span
+              >
             </div>
-</main>
+            <div class="gallery-item">
+              <img
+                src="images/Logo3.jpg"
+                alt="Spotlight logo designs"
+                loading="lazy"
+              />
+              <span class="tooltip-text"
+                >Logo and Business Card 3 for Independent Film Company<br />Educational
+                Creative Commons Usage of Image</span
+              >
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/Logo4.jpg"
+                alt="Spotlight logo designs"
+                loading="lazy"
+              />
+              <span class="tooltip-text"
+                >Logo and Business Card 4 for Independent Film Company<br />Educational
+                Creative Commons Usage of Image</span
+              >
+            </div>
+          </div>
+          <p class="back-to-top">
+            <a class="button" href="#hero">&uArr; Back to Top</a>
+          </p>
+        </div>
+      </section>
 
-<footer>
-    <p>&copy; 2026 Natalie Kiernan. All rights reserved.</p>
-    <p>The digital content, images, and text on this website are protected under international copyright laws.</p> 
-    <p>Unauthorized scraping, data mining, harvesting, or reproduction of any content on this site is strictly prohibited. 
-        Notice of Opt-Out: The owner of this site explicitly reserves all rights and prohibits the use of content here for machine learning, 
-        artificial intelligence (AI) training, or algorithmic model development purposes. Any such unauthorized use constitutes 
-        copyright infringement.        
-    </p>
-    <p></p>
-</footer>
+      <section id="newspaper-ad" class="gallery-section">
+        <div class="container">
+          <h2 class="section-heading">Newspaper Ad</h2>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img
+                src="images/Flower Newspaper better (1).jpg"
+                alt="flower 1 better"
+                loading="lazy"
+              />
+              <span class="tooltip-text"
+                >Full-Page Newspaper Ad-Weekend 1<br />(simple shapes, letters,
+                3-color limit)</span
+              >
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/Flower Newspaper  (2).jpg"
+                alt="Flower 2"
+                loading="lazy"
+              />
+              <span class="tooltip-text"
+                >Full-Page Newspaper Ad-Weekend 2<br />(simple shapes, letters,
+                3-color limit)</span
+              >
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/Flower Newspaper  better (3).jpg"
+                alt="Flower 3 better"
+                loading="lazy"
+              />
+              <span class="tooltip-text"
+                >Full-Page Newspaper Ad-Weekend 3<br />(simple shapes, letters,
+                3-color limit)</span
+              >
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/Flower Newspaper better (4).jpg"
+                alt="Flower 4 better"
+                loading="lazy"
+              />
+              <span class="tooltip-text"
+                >Full-Page Newspaper Ad-Weekend 4<br />(simple shapes, letters,
+                3-color limit)</span
+              >
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/Flower Newspaper  (5).jpg"
+                alt="Flower 5"
+                loading="lazy"
+              />
+              <span class="tooltip-text"
+                >Full-Page Newspaper Ad-Weekend 5<br />(simple shapes, letters,
+                3-color limit)</span
+              >
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/Flower Newspaper (2nd last) (3).jpg"
+                alt="Flower 6"
+                loading="lazy"
+              />
+              <span class="tooltip-text"
+                >Full-Page Newspaper Ad-Weekend 6<br />(simple shapes, letters,
+                3-color limit)</span
+              >
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/Flower Newspaper (last).jpg"
+                alt="Flower 7"
+                loading="lazy"
+              />
+              <span class="tooltip-text"
+                >Full-Page Newspaper Ad-Weekend 7<br />(simple shapes, letters,
+                3-color limit)</span
+              >
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/Flower Newspaper  (8).jpg"
+                alt="Flower 8"
+                loading="lazy"
+              />
+              <span class="tooltip-text"
+                >Full-Page Newspaper Ad-Weekend 8<br />(simple shapes, letters,
+                3-color limit)</span
+              >
+            </div>
+          </div>
+          <p class="back-to-top">
+            <a class="button" href="#hero">&uArr; Back to Top</a>
+          </p>
+        </div>
+      </section>
 
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
-    <button class="lightbox-close" id="lightbox-close" aria-label="Close preview">&times;</button>
-    <img id="lightbox-img" src="" alt="">
-</div>
+      <section id="bookcovers" class="gallery-section">
+        <div class="container">
+          <h2 class="section-heading">Book Covers</h2>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img
+                src="images/horror-book-cover1.jpg"
+                alt="Horror Book 1"
+                loading="lazy"
+              />
+              <span class="tooltip-text"
+                >Horror Book 1 Cover<br />Some Images were AI-Generated</span
+              >
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/horror-book-cover2.jpg"
+                alt="Horror Book 2"
+                loading="lazy"
+              />
+              <span class="tooltip-text"
+                >Horror Book 2 Cover<br />Some Images were AI-Generated</span
+              >
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/horror-book-cover3.gif"
+                alt="Horror Book 3"
+                loading="lazy"
+              />
+              <span class="tooltip-text"
+                >Horror Book 3 Cover<br />Some Images were AI-Generated</span
+              >
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/horror-book-covers-shelf.jpg"
+                alt="Horror Book Covers Shelf"
+                loading="lazy"
+              />
+              <span class="tooltip-text"
+                >Book Series<br />Some Images were AI-Generated</span
+              >
+            </div>
+          </div>
+          <p class="back-to-top">
+            <a class="button" href="#hero">&uArr; Back to Top</a>
+          </p>
+        </div>
+      </section>
 
-<script src="script.js"></script>
-</body>
+      <section id="animation" class="gallery-section">
+        <div class="container">
+          <h2 class="section-heading">Animations</h2>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img
+                src="images/Animated-Card.gif"
+                alt="Birthday card new"
+                loading="lazy"
+              />
+              <span class="tooltip-text">Birthday Card</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/click-ad-fashion.gif"
+                alt="Click Ad-fashion"
+                loading="lazy"
+              />
+              <span class="tooltip-text">Fashion Click-Ad</span>
+            </div>
+          </div>
+          <p class="back-to-top">
+            <a class="button" href="#hero">&uArr; Back to Top</a>
+          </p>
+        </div>
+      </section>
+
+      <section id="magazine" class="gallery-section">
+        <div class="container">
+          <h2 class="section-heading">Magazine Layouts</h2>
+          <div class="gallery2">
+            <div class="gallery-item">
+              <img
+                src="images/MAG-lustig.jpg"
+                alt="1970 Magazine Layout Page 1"
+                loading="lazy"
+              />
+              <span class="tooltip-text">1970 Magazine Layout (Page 1)</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/MAG-lustig2.jpg"
+                alt="1970 Magazine Layout Page 2"
+                loading="lazy"
+              />
+              <span class="tooltip-text">1970 Magazine Layout (Page 2)</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/Adventure_Awaits-turquios-individual-pages.jpg"
+                alt="Modern Magazine Design Page 1"
+                loading="lazy"
+              />
+              <span class="tooltip-text">Modern Magazine Design-Page 1</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/Adventure_Awaits-turquios-individual-pages2.jpg"
+                alt="Modern Magazine Design Page 2"
+                loading="lazy"
+              />
+              <span class="tooltip-text">Modern Magazine Design-Page 2</span>
+            </div>
+          </div>
+          <p class="back-to-top">
+            <a class="button" href="#hero">&uArr; Back to Top</a>
+          </p>
+        </div>
+      </section>
+
+      <section id="government-social" class="gallery-section">
+        <div class="container">
+          <h2 class="section-heading">Government &amp; Social Service Ad</h2>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img
+                src="images/CHAPEL HAVEN FINAL-unblurred.jpg"
+                alt="Chapel Haven social service flyer"
+                loading="lazy"
+              />
+              <span class="tooltip-text">Social Service Flyer 8x11</span>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/landmark pins.jpg"
+                alt="Map pins tourist landmarks Rio de Janeiro"
+                loading="lazy"
+              />
+              <span class="tooltip-text"
+                >Map Pins-Tourist Landmarks-Rio De Janiero</span
+              >
+            </div>
+          </div>
+          <p class="back-to-top">
+            <a class="button" href="#hero">&uArr; Back to Top</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Natalie Kiernan. All rights reserved.</p>
+      <p>
+        The digital content, images, and text on this website are protected
+        under international copyright laws.
+      </p>
+      <p>
+        Unauthorized scraping, data mining, harvesting, or reproduction of any
+        content on this site is strictly prohibited. Notice of Opt-Out: The
+        owner of this site explicitly reserves all rights and prohibits the use
+        of content here for machine learning, artificial intelligence (AI)
+        training, or algorithmic model development purposes. Any such
+        unauthorized use constitutes copyright infringement.
+      </p>
+      <p></p>
+    </footer>
+
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Image preview"
+    >
+      <button
+        class="lightbox-close"
+        id="lightbox-close"
+        aria-label="Close preview"
+      >
+        &times;
+      </button>
+      <button
+        class="lightbox-nav lightbox-prev"
+        id="lightbox-prev"
+        aria-label="Previous image"
+      >
+        &#8249;
+      </button>
+      <img id="lightbox-img" src="" alt="" />
+      <button
+        class="lightbox-nav lightbox-next"
+        id="lightbox-next"
+        aria-label="Next image"
+      >
+        &#8250;
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
