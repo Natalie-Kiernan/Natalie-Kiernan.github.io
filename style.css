@@ -20,8 +20,8 @@
   --muted-color: #4b4040;
   --border-color: #e0e0e0;
   --gradient: linear-gradient(to right, var(--accent-color), #96de5f);
-  --main-font: "Libre Baskerville", "Cormorant", serif;
-  --body-font: "Inter", "Montserrat", "Open-Sans", sans-serif;
+  --main-font: "Cormorant", serif;
+  --body-font: "Montserrat", "Inter", "Open-Sans", sans-serif;
   --shadow: 0 4px 20px rgba(9, 9, 9, 0.08);
   --transition: 0.2s ease;
 }
