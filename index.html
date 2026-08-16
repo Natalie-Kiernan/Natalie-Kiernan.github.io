@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Natalie Kiernan - Portfolio</title>
-    <link rel="icon" type="image/jpg" href="images/baker-studio-headshot.jpg" />
+    <link rel="icon" type="image/jpg" href="" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="header">
-      <h1 class="logo"><a href="index.html">Natalie Kiernan</a></h1>
+      <h1><a href="index.html" class="logo">Natalie Kiernan</a></h1>
       <nav aria-label="Main navigation">
         <ul>
-          <li><a href="#posters">Portfolio</a></li>
-          <li class="border"><a href="about.html">About</a></li>
+          <li><a href="#posters" class="nav-link">Portfolio</a></li>
+          <li class="border"><a href="about.html" class="nav-link">About</a></li>
           <li><a class="cta" href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -22,38 +22,29 @@
     <main>
       <section id="hero">
         <div class="container">
-          <div class="picture">
-            <img
-              src="images/baker-studio-headshot.png"
-              alt="Professional headshot"
-              width="500"
-              height="500"
-            />
-          </div>
-          <div class="info">
-            <h1>
-              I'm Natalie Kiernan<br /><span class="hero-accent"
-                >Graphic Designer</span
-              >
-            </h1>
-            <div class="grid-container">
-              <a href="#posters">Posters</a>
-              <a href="#packaging">Packaging</a>
-              <a href="#branding">Branding</a>
-              <a href="#animation">Animations</a>
-              <a href="#newspaper-ad">Newspaper Ads</a>
-              <a href="#bookcovers">Book Covers</a>
-              <a href="#magazine">Magazine Layouts</a>
-              <a href="#government-social">Government/Social Service Ad</a>
+            <div class="info">
+                <h1>I'm Natalie Kiernan</h1>
+				<h1 class="hero-accent">GRAPHIC DESIGNER</h1>
+				<h2>Based in Connecticut</h2>
+				<a class="button" href="contact.html">Contact</a>
             </div>
-            <div class="flex-container">
-              <a class="button" href="contact.html">Contact</a>
+            <div class="picture">
+            <img class="hero-img" src="images/Sneakers-Parks-01.jpg" alt="Sneakers"/>
+            <!-- <img src="images/baker-studio-headshot.png" alt="Headshot"/> -->
             </div>
-          </div>
         </div>
-      </section>
-
-      <section id="posters" class="gallery-section">
+      	</section>
+			<div class="grid-container">
+				<a href="#posters">Posters</a>
+				<a href="#packaging">Packaging</a>
+				<a href="#branding">Branding</a>
+				<a href="#animation">Animations</a>
+				<a href="#newspaper-ad">Newspaper Ads</a>
+				<a href="#bookcovers">Book Covers</a>
+				<a href="#magazine">Magazine Layouts</a>
+				<a href="#government-social">Government/Social Service Ad</a>
+			</div>
+      	<section id="posters" class="gallery-section">
         <div class="container">
           <h2 class="section-heading">Posters</h2>
           <div class="gallery">
@@ -149,9 +140,9 @@
               </div>
             </div>
           </div>
-          <p class="back-to-top">
-            <a class="button" href="#hero">&uArr; Back to Top</a>
-          </p>
+          <div id="back-to-top">
+            <a class="button" href="#hero">&uArr; Top</a>
+		  </div>
         </div>
       </section>
 
@@ -204,9 +195,6 @@
               <span class="tooltip-text">Wine Bottle Label</span>
             </div>
           </div>
-          <p class="back-to-top">
-            <a class="button" href="#hero">&uArr; Back to Top</a>
-          </p>
         </div>
       </section>
 
@@ -259,9 +247,6 @@
               >
             </div>
           </div>
-          <p class="back-to-top">
-            <a class="button" href="#hero">&uArr; Back to Top</a>
-          </p>
         </div>
       </section>
 
@@ -358,9 +343,6 @@
               >
             </div>
           </div>
-          <p class="back-to-top">
-            <a class="button" href="#hero">&uArr; Back to Top</a>
-          </p>
         </div>
       </section>
 
@@ -409,9 +391,6 @@
               >
             </div>
           </div>
-          <p class="back-to-top">
-            <a class="button" href="#hero">&uArr; Back to Top</a>
-          </p>
         </div>
       </section>
 
@@ -436,9 +415,6 @@
               <span class="tooltip-text">Fashion Click-Ad</span>
             </div>
           </div>
-          <p class="back-to-top">
-            <a class="button" href="#hero">&uArr; Back to Top</a>
-          </p>
         </div>
       </section>
 
@@ -479,9 +455,6 @@
               <span class="tooltip-text">Modern Magazine Design-Page 2</span>
             </div>
           </div>
-          <p class="back-to-top">
-            <a class="button" href="#hero">&uArr; Back to Top</a>
-          </p>
         </div>
       </section>
 
@@ -508,28 +481,12 @@
               >
             </div>
           </div>
-          <p class="back-to-top">
-            <a class="button" href="#hero">&uArr; Back to Top</a>
-          </p>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>&copy; 2026 Natalie Kiernan. All rights reserved.</p>
-      <p>
-        The digital content, images, and text on this website are protected
-        under international copyright laws.
-      </p>
-      <p>
-        Unauthorized scraping, data mining, harvesting, or reproduction of any
-        content on this site is strictly prohibited. Notice of Opt-Out: The
-        owner of this site explicitly reserves all rights and prohibits the use
-        of content here for machine learning, artificial intelligence (AI)
-        training, or algorithmic model development purposes. Any such
-        unauthorized use constitutes copyright infringement.
-      </p>
-      <p></p>
+    	&copy; 2026 Natalie Kiernan. All rights reserved.
     </footer>
 
     <div
